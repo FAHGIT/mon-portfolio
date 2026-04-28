@@ -64,7 +64,7 @@ Pour ajouter ou modifier un projet, éditer uniquement ce fichier — aucune mod
 
 ## Maintenance
 
-Après chaque ajout ou correction : relire le fichier, diagnostic uniquement (ambiguïtés, redondances, manques) — ne rien modifier sans instruction explicite.
+Après chaque ajout ou correction, exécuter automatiquement un diagnostic : relire le fichier (ambiguïtés, redondances, manques) — ne rien modifier sans instructions explicites.
 
 ## Interdictions
 
