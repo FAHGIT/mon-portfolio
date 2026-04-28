@@ -26,7 +26,9 @@ mon-portfolio/
 ├── index.html
 ├── css/style.css
 ├── js/main.js
-└── assets/images/
+├── data/projects.json
+├── assets/images/
+└── .mcp.json
 ```
 
 Single `index.html` linking external CSS and JS.
@@ -35,13 +37,13 @@ Single `index.html` linking external CSS and JS.
 
 - **Minimal aesthetic** — no decorative animations, no gradients, no shadows unless functionally justified (e.g. a subtle box-shadow on `.project-card:hover` is allowed — purely decorative drop-shadows on static elements are not)
 - Maximum 2 accent colors at any time — accent colors are `--color-accent` and one optional `--color-highlight-*`; `--color-muted` and `--color-faint` are neutral tones, not accent colors
-- Dark background by default (`--color-bg: #0f0f0f`) with light mode via `body.light`
+- Dark background by default (`--color-bg: #0a0a0a`) with light mode via `[data-theme="light"]` on `<html>`
 - Desktop-first layout: base styles target large screens, single breakpoint for mobile via `max-width: 600px` — do not add intermediate breakpoints
 - All colors and fonts go through CSS variables defined at `:root` — never hardcode values
 
 ## Theme system
 
-- Mode clair/sombre géré par la classe `light` sur `<body>`
+- Mode clair/sombre géré par `data-theme="light"` sur `<html>` (`document.documentElement.dataset.theme`)
 - Préférence persistée dans `localStorage` avec la clé `theme`
 - Icône ☀ (sombre) / ☽ (clair) dans la navigation
 
