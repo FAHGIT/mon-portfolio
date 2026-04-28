@@ -55,6 +55,11 @@ Single `index.html` linking external CSS and JS.
 - Images must include a non-empty `alt` attribute; accepted formats: `webp`, `png`, `jpg`
 - JavaScript: use `const`/`let` (no `var`), no ES modules (`type="module"`) — plain `<script src="...">` only
 
+## Données projets
+
+Les projets affichés dans la section #projects sont chargés dynamiquement depuis `data/projects.json`.
+Pour ajouter ou modifier un projet, éditer uniquement ce fichier — aucune modification de `index.html` ou `js/main.js` n'est nécessaire.
+
 ## Maintenance
 
 Après chaque ajout ou correction : relire le fichier, diagnostic uniquement (ambiguïtés, redondances, manques) — ne rien modifier sans instruction explicite.
