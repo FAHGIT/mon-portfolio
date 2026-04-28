@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Adamfa Coulibaly — Portfolio</title>
+  <meta name="description" content="Portfolio d'Adamfa Coulibaly — Pharmacien Développeur en formation. Je construis des projets concrets sur la santé avec l'IA.">
+  <meta property="og:title" content="Adamfa Coulibaly — Portfolio">
+  <meta property="og:description" content="Pharmacien Développeur en formation. Je construis des projets concrets sur la santé avec l'IA.">
+  <meta property="og:image" content="assets/images/photo-about.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation fixe -->
+  <nav id="site-nav" aria-label="Navigation principale">
+    <div class="container">
+      <a href="#hero" class="nav-logo">Adamfa Coulibaly</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Basculer le mode clair/sombre">☀</button>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger"
+              aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Skeleton screen -->
+  <div id="skeleton-screen" aria-hidden="true">
+    <div class="skeleton-container">
+      <div class="skel-block skel-block--title"></div>
+      <div class="skel-block skel-block--divider"></div>
+      <div class="skel-block skel-block--subtitle"></div>
+      <div class="skel-block skel-block--text"></div>
+      <div class="skel-block skel-block--btn"></div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header id="hero">
+    <div class="container">
+      <h1>Adamfa Coulibaly</h1>
+      <div class="divider"></div>
+      <p class="tagline">Pharmacien Développeur en formation</p>
+      <p class="hero-hook">Je construis des projets concrets sur la santé avec l'IA.</p>
+      <a href="#projects" class="cta-btn">Voir mes projets</a>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- À propos -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-label">À propos</h2>
+      <div class="about">
+        <img class="about__photo" src="assets/images/photo-about.jpg" alt="Portrait d'Adamfa Coulibaly" loading="lazy" width="160" height="160">
+        <p class="about__text">Passionné par la technologie et l'intelligence artificielle, j'apprends à construire des projets concrets autour de la santé et d'autres secteurs en utilisant les outils les plus avancés du marché. Ce portfolio est lui-même construit avec Claude Code.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-label">Mes projets</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card__banner"></div>
+          <div class="project-card__body">
+            <h3>MonPortfolio</h3>
+            <p>Mon portfolio développeur, construit entièrement avec Claude Code.</p>
+            <ul class="project-card__tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">Claude Code</li>
+            </ul>
+            <a href="https://github.com/FAHGIT" target="_blank" rel="noopener" aria-label="Voir MonPortfolio sur GitHub (ouvre un nouvel onglet)">Voir le projet →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__banner"></div>
+          <div class="project-card__body">
+            <h3>Contes Africains</h3>
+            <p>Une application qui lit des contes et légendes africains en clonant la voix des parents.</p>
+            <ul class="project-card__tags">
+              <li class="tag">Contes africains</li>
+              <li class="tag">Clonage de voix</li>
+            </ul>
+            <a href="#">Voir le projet →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__banner"></div>
+          <div class="project-card__body">
+            <h3>DPU</h3>
+            <p>Une base de données centralisée et sécurisée qui regroupe l'intégralité du parcours d'un patient au sein d'un complexe de santé.</p>
+            <ul class="project-card__tags">
+              <li class="tag">Santé</li>
+              <li class="tag">Patient</li>
+              <li class="tag">DPU</li>
+            </ul>
+            <a href="#">Voir le projet →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-label">Me contacter</h2>
+      <p>Une question ou une opportunité ? Écrivez-moi.</p>
+      <form class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Nom</label>
+          <input type="text" id="contact-name" name="name" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Envoyer</button>
+      </form>
+      <a href="mailto:rachidaka.kz@gmail.com" class="contact-link">rachidaka.kz@gmail.com</a>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <nav class="footer-nav" aria-label="Liens externes">
+        <a href="https://github.com/FAHGIT" target="_blank" rel="noopener" aria-label="GitHub (ouvre un nouvel onglet)">GitHub</a>
+        <a href="#" aria-label="Profil LinkedIn">LinkedIn</a>
+      </nav>
+      <p class="footer-copy">© 2026 Adamfa Coulibaly &middot; Construit avec Claude Code</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut de page">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
