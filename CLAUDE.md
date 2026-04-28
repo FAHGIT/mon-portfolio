@@ -31,7 +31,7 @@ mon-portfolio/
 └── .mcp.json
 ```
 
-Single `index.html` linking external CSS and JS.
+Single `index.html` linking external CSS, JS, and fetching `data/projects.json` at runtime.
 
 ## Design principles
 
