@@ -1,0 +1,20 @@
+[
+  {
+    "name": "mon-portfolio",
+    "description": "Portfolio personnel — Adamfa Coulibaly, Pharmacien Développeur en formation",
+    "languages": ["CSS", "HTML", "JavaScript"],
+    "url": "https://github.com/FAHGIT/mon-portfolio"
+  },
+  {
+    "name": "hello-python",
+    "description": "Script Python simple — premiers pas",
+    "languages": ["Python"],
+    "url": "https://github.com/FAHGIT/hello-python"
+  },
+  {
+    "name": "notes-cli",
+    "description": "Outil CLI de prise de notes — placeholder",
+    "languages": ["CLI"],
+    "url": "https://github.com/FAHGIT/notes-cli"
+  }
+]

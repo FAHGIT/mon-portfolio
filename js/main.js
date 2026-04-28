@@ -83,6 +83,34 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// ── Projects ──
+const projectGrid = document.getElementById('project-grid');
+
+function renderProjects(projects) {
+  projectGrid.innerHTML = projects.map(p => `
+    <article class="project-card">
+      <div class="project-card__banner"></div>
+      <div class="project-card__body">
+        <h3>${p.name}</h3>
+        <p>${p.description}</p>
+        ${p.languages.length ? `<ul class="project-card__tags">${p.languages.map(l => `<li class="tag">${l}</li>`).join('')}</ul>` : ''}
+        <a href="${p.url}" target="_blank" rel="noopener"
+           aria-label="Voir ${p.name} sur GitHub (ouvre un nouvel onglet)">Voir sur GitHub →</a>
+      </div>
+    </article>
+  `).join('');
+}
+
+fetch('data/projects.json')
+  .then(res => {
+    if (!res.ok) throw new Error(res.status);
+    return res.json();
+  })
+  .then(renderProjects)
+  .catch(() => {
+    projectGrid.innerHTML = '<p>Impossible de charger les projets.</p>';
+  });
+
 // ── Fade-in sections au scroll ──
 const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
